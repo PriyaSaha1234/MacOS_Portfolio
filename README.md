@@ -1,16 +1,43 @@
-# React + Vite
+# macOS-Inspired Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An interactive portfolio experience inspired by the macOS desktop, built with React and Vite. Instead of a traditional portfolio website, this project recreates familiar macOS applications and interactions, allowing visitors to explore projects, skills, blogs, internships, and achievements through a desktop-like interface.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Add your deployed URL here.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* macOS-inspired desktop environment
+* Interactive Dock navigation
+* Finder-style file explorer
+* Photo Gallery with categorized collections
+* Terminal-style tech stack showcase
+* Developer Blog section
+* Resume viewer
+* Contact application
+* Theme switching with multiple wallpapers
+* Desktop sound effects
+* Draggable application windows
+* Responsive design
 
-## Expanding the Oxlint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+git clone <repository-url>
+cd macos_portfolio
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Motivation
+
+Traditional portfolio websites often feel static and predictable. This project explores a more immersive approach by recreating the desktop experience users are already familiar with, making portfolio exploration feel interactive and engaging.
+
+L
