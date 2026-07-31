@@ -35,5 +35,3 @@ npm run build
 ## Motivation
 
 Traditional portfolio websites often feel static and predictable. This project explores a more immersive approach by recreating the desktop experience users are already familiar with, making portfolio exploration feel interactive and engaging.
-
-L
