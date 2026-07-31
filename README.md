@@ -2,10 +2,6 @@
 
 An interactive portfolio experience inspired by the macOS desktop, built with React and Vite. Instead of a traditional portfolio website, this project recreates familiar macOS applications and interactions, allowing visitors to explore projects, skills, blogs, internships, and achievements through a desktop-like interface.
 
-## Live Demo
-
-Add your deployed URL here.
-
 ## Features
 
 * macOS-inspired desktop environment
