@@ -12,12 +12,12 @@ const Contact =()=> {
 
             <div className="p-5 space-y-5">
                 <img
-                    src="/images/adrian.jpg"
-                    alt="Adrian"
-                    className="w-20 rounded-full" />
+                    src="/images/priya.jpeg"
+                    alt="Priya"
+                    className="w-34 rounded-full" />
 
                 <h3>Let's Connect</h3>
-                <p>Got an idea? I am in.</p>
+                <p>Got an idea, opportunity, or challenge? Let's build something meaningful together.</p>
                 <p>priyasahasawhney2223@gmail.com</p>
 
                 <ul>

@@ -11,6 +11,19 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: background-image 0.5s ease;
+}
+
+body[data-theme="default"] {
+    background-image: url("/images/wallpaper.png");
+}
+
+body[data-theme="light"] {
+    background-image: url("/images/light-wallpaper.png");
+}
+
+body[data-theme="dark"] {
+    background-image: url("/images/dark-wallpaper.png");
 }
 
 @theme {
@@ -51,7 +64,7 @@ body {
             @apply flex items-center gap-5 max-sm:hidden;
 
             p {
-                @apply text-sm cursor-pointer hover:underline transition-all;
+                @apply text-sm cursor-pointer transition-all;
             }
         }
 
@@ -62,6 +75,17 @@ body {
 }
 
 @layer components {
+    .theme-menu {
+        @apply flex flex-col gap-1 bg-white/80 backdrop-blur-xl rounded-xl shadow-2xl p-2 w-36 border border-white/30;
+
+        p {
+            @apply block w-full px-3 py-2 text-sm text-gray-700 rounded-lg cursor-pointer transition-all;
+
+            &:hover {
+                @apply bg-gray-200/80;
+            }
+        }
+    }
     .icon {
         @apply p-1 hover:bg-gray-200 rounded hover:cursor-default;
     }
@@ -247,12 +271,18 @@ body {
             }
 
             ul {
-                li {
-                    @apply flex space-y-1 items-center gap-2 px-3 py-2 rounded-md cursor-pointer transition-colors;
+                @apply space-y-1;
 
-                    &:first-child {
-                        @apply bg-blue-100 text-blue-700;
-                    }
+                .active {
+                    @apply bg-blue-100 text-blue-700;
+                }
+
+                .not-active {
+                    @apply text-gray-700 hover:bg-gray-200;
+                }
+
+                li {
+                    @apply flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer transition-colors;
 
                     img {
                         @apply w-4;
@@ -274,6 +304,37 @@ body {
                 li {
                     img {
                         @apply size-full object-cover rounded-lg;
+                    }
+
+                    &:first-child {
+                        @apply row-start-1 row-span-3 col-start-1 col-span-3;
+                    }
+
+                    &:nth-child(2) {
+                        @apply row-start-1 row-span-3 col-start-4 col-span-2;
+                    }
+
+                    &:nth-child(3) {
+                        @apply row-start-4 row-span-2 col-start-3 col-span-3;
+                    }
+
+                    &:last-child {
+                        @apply row-start-4 row-span-2 col-start-1 col-span-2;
+                    }
+                }
+            }
+        }
+        .gallery {
+            @apply p-5;
+
+            ul {
+                @apply grid grid-cols-5 grid-rows-5 gap-2.5;
+
+                li {
+                    @apply bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center;
+
+                    img {
+                        @apply w-full h-full object-contain rounded-lg;
                     }
 
                     &:first-child {
