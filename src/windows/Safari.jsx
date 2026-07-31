@@ -50,7 +50,7 @@ const Safari = () => {
                                 <p>{date}</p>
                                 <h3>{title}</h3>
                                 <a href={link} target="_blank" rel="noopener noreffer">
-                                    Checkout the full post <MoveRight className="icon-hover"/>
+                                    Explore the Build <MoveRight className="icon-hover"/>
                                 </a>
                             </div>
                         </div>

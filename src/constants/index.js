@@ -77,52 +77,47 @@ const dockApps = [
 const blogPosts = [
     {
         id: 1,
-        date: "Sep 2, 2025",
-        title:
-            "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
+        date: "May 2025",
+        title: "Building Einstein Classes: A Full-Stack EdTech Platform with Laravel",
         image: "/images/blog1.png",
-        link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+        link: "/blog/einstein-classes",
     },
     {
         id: 2,
-        date: "Aug 28, 2025",
-        title: "The Ultimate Guide to Mastering Three.js for 3D Development",
+        date: "November 2025",
+        title: "Building HelioSynth: A Research-Focused AI & Healthcare Platform",
         image: "/images/blog2.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+        link: "/blog/heliosynth",
     },
     {
         id: 3,
-        date: "Aug 15, 2025",
-        title: "The Ultimate Guide to Mastering GSAP Animations",
+        date: "July 2026",
+        title: "Creating a macOS-Inspired Portfolio Experience with React & GSAP",
         image: "/images/blog3.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+        link: "/blog/portfolio",
     },
 ];
 
 const techStack = [
     {
         category: "Frontend",
-        items: ["React.js", "Next.js", "TypeScript"],
-    },
-    {
-        category: "Mobile",
-        items: ["React Native", "Expo"],
-    },
-    {
-        category: "Styling",
-        items: ["Tailwind CSS", "Sass", "CSS"],
+        items: ["React.js", "TypeScript", "Tailwind CSS"],
     },
     {
         category: "Backend",
-        items: ["Node.js", "Express", "NestJS", "Hono"],
+        items: ["Node.js", "Laravel", "PHP", "REST APIs"],
     },
     {
-        category: "Database",
-        items: ["MongoDB", "PostgreSQL"],
+        category: "AI & ML",
+        items: ["Python", "Scikit-learn", "Pandas", "NumPy"],
     },
     {
-        category: "Dev Tools",
-        items: ["Git", "GitHub", "Docker"],
+        category: "Databases",
+        items: ["MongoDB", "PostgreSQL", "MySQL"],
+    },
+    {
+        category: "Tools & Cloud",
+        items: ["Git", "GitHub", "AWS"],
     },
 ];
 
@@ -132,28 +127,14 @@ const socials = [
         text: "Github",
         icon: "/icons/github.svg",
         bg: "#f4656b",
-        link: "https://github.com/JavaScript-Mastery-Pro",
-    },
-    {
-        id: 2,
-        text: "Platform",
-        icon: "/icons/atom.svg",
-        bg: "#4bcb63",
-        link: "https://jsmastery.com/",
-    },
-    {
-        id: 3,
-        text: "Twitter/X",
-        icon: "/icons/twitter.svg",
-        bg: "#ff866b",
-        link: "https://x.com/jsmasterypro",
+        link: "https://github.com/PriyaSaha1234",
     },
     {
         id: 4,
         text: "LinkedIn",
         icon: "/icons/linkedin.svg",
         bg: "#05b6f6",
-        link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+        link: "https://www.linkedin.com/in/priyasahaggsipu/",
     },
 ];
 
@@ -161,48 +142,83 @@ const photosLinks = [
     {
         id: 1,
         icon: "/icons/gicon1.svg",
-        title: "Library",
+        title: "Internships",
     },
     {
         id: 2,
         icon: "/icons/gicon2.svg",
-        title: "Memories",
+        title: "Hackathons",
     },
     {
         id: 3,
         icon: "/icons/file.svg",
-        title: "Places",
+        title: "Leadership",
     },
     {
         id: 4,
         icon: "/icons/gicon4.svg",
-        title: "People",
-    },
-    {
-        id: 5,
-        icon: "/icons/gicon5.svg",
-        title: "Favorites",
+        title: "Events",
     },
 ];
 
-const gallery = [
-    {
-        id: 1,
-        img: "/images/gal1.png",
-    },
-    {
-        id: 2,
-        img: "/images/gal2.png",
-    },
-    {
-        id: 3,
-        img: "/images/gal3.png",
-    },
-    {
-        id: 4,
-        img: "/images/gal4.png",
-    },
-];
+const gallery = {
+    Internships: [
+        {
+            id: 1,
+            name: "Data Analyst Internship",
+            img: "/images/gal2.png",
+        },
+        {
+            id: 2,
+            name: "ML Internship",
+            img: "/images/gal1.png",
+        },
+    ],
+
+    Hackathons: [
+        {
+            id: 1,
+            name: "Hackathon Participation",
+            img: "/images/hack1.png",
+        },
+    ],
+
+    Leadership: [
+        {
+            id: 1,
+            name: "Fine Art's Team Coordinator",
+            img: "/images/por1.png",
+        },
+        {
+            id: 2,
+            name: "GDGSC Design Team Member",
+            img: "/images/por2.png",
+        },
+    ],
+
+    Events: [
+        {
+            id: 1,
+            name: "Hackathon Organizer",
+            img: "/images/event1.png",
+        },
+        {
+            id: 2,
+            name: "Technical Event",
+            img: "/images/event2.png",
+        },
+        {
+            id: 3,
+            name: "Certificate",
+            img: "/images/event3.png",
+        },
+        {
+            id: 4,
+            name: "Hackathon Organizer",
+            img: "/images/event4.png",
+        },
+    ],
+};
 
 export {
     navLinks,
@@ -225,7 +241,7 @@ const WORK_LOCATION = {
         // ▶ Project 1
         {
             id: 5,
-            name: "Nike Ecommerce Website Application",
+            name: "HelioSynth Website",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-10 left-5", // icon position inside Finder
@@ -233,44 +249,35 @@ const WORK_LOCATION = {
             children: [
                 {
                     id: 1,
-                    name: "Nike Project.txt",
+                    name: "HelioSynth.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-                        "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-                        "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-                        "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+                        "The HelioSynth Research website is a modern digital platform built to showcase cutting-edge innovations in artificial intelligence, healthcare, education, and data-driven research.",
+                        "More than just a company website, it serves as a hub for presenting research initiatives, technological solutions, startup ventures, and impactful projects.",
+                        "The platform combines clean design, intuitive navigation, and compelling storytelling to communicate HelioSynth's vision of transforming industries through innovation.",
+                        "Built with a scalable architecture and responsive design principles, it delivers a seamless experience across devices while maintaining performance, accessibility, and a professional brand identity.",
                     ],
                 },
                 {
                     id: 2,
-                    name: "nike.com",
+                    name: "heliosynth.com",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+                    href: "https://heliosynthresearch.ai/",
                     position: "top-10 right-20",
                 },
                 {
                     id: 4,
-                    name: "nike.png",
+                    name: "Heliosynth.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
                     position: "top-52 right-80",
                     imageUrl: "/images/project-1.png",
-                },
-                {
-                    id: 5,
-                    name: "Design.fig",
-                    icon: "/images/plain.png",
-                    kind: "file",
-                    fileType: "fig",
-                    href: "https://google.com",
-                    position: "top-60 right-20",
                 },
             ],
         },
@@ -278,7 +285,7 @@ const WORK_LOCATION = {
         // ▶ Project 2
         {
             id: 6,
-            name: "AI Resume Analyzer",
+            name: "Einstein Classes Website",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-52 right-80",
@@ -286,30 +293,30 @@ const WORK_LOCATION = {
             children: [
                 {
                     id: 1,
-                    name: "AI Resume Analyzer Project.txt",
+                    name: "Einstein Classes.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 right-10",
                     description: [
-                        "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-                        "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-                        "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-                        "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
-                    ],
+                        "The Einstein Classes website is a production-level educational platform built to streamline course discovery, student engagement, and online learning services for competitive exam aspirants.",
+                        "I contributed to both frontend and backend development, implementing feature enhancements, UI improvements, database-driven functionality, and resolving issues across the live platform.",
+                        "A complete cart and checkout system was developed to simplify course purchases, alongside Razorpay payment gateway integration for secure real-time transactions and seamless enrollment workflows.",
+                        "Built using PHP and Laravel, the platform focuses on scalability, reliability, and performance while serving a growing community of JEE and NEET aspirants.",
+                    ]
                 },
                 {
                     id: 2,
-                    name: "ai-resume-analyzer.com",
+                    name: "Einstein Classes.com",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+                    href: "https://einsteinclasses.com/",
                     position: "top-20 left-20",
                 },
                 {
                     id: 4,
-                    name: "ai-resume-analyzer.png",
+                    name: "einsteinclasses.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
@@ -322,7 +329,7 @@ const WORK_LOCATION = {
                     icon: "/images/plain.png",
                     kind: "file",
                     fileType: "fig",
-                    href: "https://google.com",
+                    href: "https://www.figma.com/design/3HmjuPPqUoYbj9rks6Fef3/Moodboard?t=IvfyWLbGscFA8NpJ-1",
                     position: "top-60 left-5",
                 },
             ],
@@ -331,7 +338,7 @@ const WORK_LOCATION = {
         // ▶ Project 3
         {
             id: 7,
-            name: "Food Delivery App",
+            name: "Portfolio Website",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-10 left-80",
@@ -339,21 +346,21 @@ const WORK_LOCATION = {
             children: [
                 {
                     id: 1,
-                    name: "Food Delivery App Project.txt",
+                    name: "Portfolio.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-                        "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-                        "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-                        "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+                        "A fully interactive macOS-inspired portfolio experience that I designed and developed to showcase my projects, skills, and professional journey through a familiar desktop environment.",
+                        "Rather than a traditional portfolio website, I recreated the look and feel of macOS with a dynamic desktop, interactive dock, window management system, and immersive user interactions.",
+                        "Built using JavaScript and GSAP, I implemented smooth animations, fluid transitions, and responsive micro-interactions to deliver a polished and engaging user experience.",
+                        "This project reflects my passion for creative UI engineering, combining modern web development with thoughtful design to transform a portfolio into an operating-system-style experience.",
                     ],
                 },
                 {
                     id: 2,
-                    name: "food-delivery-app.com",
+                    name: "portfolio.com",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
@@ -362,7 +369,7 @@ const WORK_LOCATION = {
                 },
                 {
                     id: 4,
-                    name: "food-delivery-app.png",
+                    name: "portfolio.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
@@ -375,7 +382,7 @@ const WORK_LOCATION = {
                     icon: "/images/plain.png",
                     kind: "file",
                     fileType: "fig",
-                    href: "https://google.com",
+                    href: "https://www.figma.com/design/Xit3gwYOnQvFwze9GyBZJX/MacOS-Portfolio--Copy-?node-id=0-1&t=aYoIylKrDMmJMSTZ-1",
                     position: "top-60 right-20",
                 },
             ],
@@ -391,46 +398,19 @@ const ABOUT_LOCATION = {
     kind: "folder",
     children: [
         {
-            id: 1,
-            name: "me.png",
-            icon: "/images/image.png",
-            kind: "file",
-            fileType: "img",
-            position: "top-10 left-5",
-            imageUrl: "/images/adrian.jpg",
-        },
-        {
-            id: 2,
-            name: "casual-me.png",
-            icon: "/images/image.png",
-            kind: "file",
-            fileType: "img",
-            position: "top-28 right-72",
-            imageUrl: "/images/adrian-2.jpg",
-        },
-        {
-            id: 3,
-            name: "conference-me.png",
-            icon: "/images/image.png",
-            kind: "file",
-            fileType: "img",
-            position: "top-52 left-80",
-            imageUrl: "/images/adrian-3.jpeg",
-        },
-        {
             id: 4,
             name: "about-me.txt",
             icon: "/images/txt.png",
             kind: "file",
             fileType: "txt",
-            position: "top-60 left-5",
-            subtitle: "Meet the Developer Behind the Code",
-            image: "/images/adrian.jpg",
+            position: "top-30 left-5",
+            subtitle: "About me",
+            image: "/images/priya.jpeg",
             description: [
-                "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-                "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-                "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-                "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+                "Hey! I'm Priya 👋, a final-year Artificial Intelligence & Data Science student passionate about building technology that creates real-world impact.",
+                "My interests span Web Development, Machine Learning, Data Analytics, and AI-driven solutions, with a focus on creating practical and user-friendly experiences.",
+                "Through internships, hackathons, and leadership roles, I've developed strong problem-solving, teamwork, and communication skills.",
+                "I'm always eager to learn, take on new challenges, and grow as both a developer and a leader 🚀",
             ],
         },
     ],
