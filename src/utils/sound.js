@@ -1,5 +1,5 @@
 const clickSound = new Audio("/sounds/click.mp3");
-clickSound.volume = 0.3;
+clickSound.volume = 0.8;
 clickSound.preload = "auto";
 
 export const playClickSound = () => {
