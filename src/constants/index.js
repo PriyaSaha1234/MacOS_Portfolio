@@ -364,7 +364,7 @@ const WORK_LOCATION = {
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+                    href: "https://priyasahaportfolio.vercel.app/",
                     position: "top-10 right-20",
                 },
                 {
@@ -384,6 +384,45 @@ const WORK_LOCATION = {
                     fileType: "fig",
                     href: "https://www.figma.com/design/Xit3gwYOnQvFwze9GyBZJX/MacOS-Portfolio--Copy-?node-id=0-1&t=aYoIylKrDMmJMSTZ-1",
                     position: "top-60 right-20",
+                },
+            ],
+        },
+        // ▶ Project 4
+        {
+            id: 8,
+            name: "Flipkart Data Analytics",
+            icon: "/images/folder.png",
+            kind: "folder",
+            position: "top-52 left-5",
+            windowPosition: "top-[45vh] left-7",
+            children: [
+                {
+                    id: 1,
+                    name: "Flipkart Analytics.txt",
+                    icon: "/images/txt.png",
+                    kind: "file",
+                    fileType: "txt",
+                    position: "top-5 left-10",
+                    description: [
+                        "An end-to-end data analytics project focused on analyzing Flipkart customer service call data to identify the key factors influencing Customer Satisfaction (CSAT).",
+
+                        "The project involved cleaning and preprocessing 30,000 customer service records, handling missing values, standardizing categorical data, and preparing the dataset for exploratory analysis.",
+
+                        "Using Excel and Pivot Tables, I analyzed customer sentiment, response time, communication channels, call duration, gender, and CSAT scores to identify meaningful patterns and trends.",
+
+                        "The analysis revealed that customer sentiment was one of the strongest factors associated with CSAT, with Very Positive customers showing the highest satisfaction while Very Negative customers had the lowest scores.",
+
+                        "The insights can help customer service teams identify areas for improvement, optimize response times, and improve overall customer experience and satisfaction."
+                    ],
+                },
+                {
+                    id: 2,
+                    name: "Flipkart Dashboard",
+                    icon: "/images/image.png",
+                    kind: "file",
+                    fileType: "img",
+                    position: "top-10 right-20",
+                    imageUrl: "/images/project-4.png",
                 },
             ],
         },
