@@ -112,8 +112,8 @@ const techStack = [
         items: ["Python", "Scikit-learn", "Pandas", "NumPy"],
     },
     {
-        category: "Databases",
-        items: ["MongoDB", "PostgreSQL", "MySQL"],
+        category: "Design",
+        items: ["Figma", "Canva", "AdobeIllustrator"],
     },
     {
         category: "Tools & Cloud",
@@ -238,50 +238,6 @@ const WORK_LOCATION = {
     icon: "/icons/work.svg",
     kind: "folder",
     children: [
-        // ▶ Project 1
-        {
-            id: 5,
-            name: "HelioSynth Website",
-            icon: "/images/folder.png",
-            kind: "folder",
-            position: "top-10 left-5", // icon position inside Finder
-            windowPosition: "top-[5vh] left-5", // optional: Finder window position
-            children: [
-                {
-                    id: 1,
-                    name: "HelioSynth.txt",
-                    icon: "/images/txt.png",
-                    kind: "file",
-                    fileType: "txt",
-                    position: "top-5 left-10",
-                    description: [
-                        "The HelioSynth Research website is a modern digital platform built to showcase cutting-edge innovations in artificial intelligence, healthcare, education, and data-driven research.",
-                        "More than just a company website, it serves as a hub for presenting research initiatives, technological solutions, startup ventures, and impactful projects.",
-                        "The platform combines clean design, intuitive navigation, and compelling storytelling to communicate HelioSynth's vision of transforming industries through innovation.",
-                        "Built with a scalable architecture and responsive design principles, it delivers a seamless experience across devices while maintaining performance, accessibility, and a professional brand identity.",
-                    ],
-                },
-                {
-                    id: 2,
-                    name: "heliosynth.com",
-                    icon: "/images/safari.png",
-                    kind: "file",
-                    fileType: "url",
-                    href: "https://heliosynthresearch.ai/",
-                    position: "top-10 right-20",
-                },
-                {
-                    id: 4,
-                    name: "Heliosynth.png",
-                    icon: "/images/image.png",
-                    kind: "file",
-                    fileType: "img",
-                    position: "top-52 right-80",
-                    imageUrl: "/images/project-1.png",
-                },
-            ],
-        },
-
         // ▶ Project 2
         {
             id: 6,
@@ -393,7 +349,7 @@ const WORK_LOCATION = {
             name: "Flipkart Data Analytics",
             icon: "/images/folder.png",
             kind: "folder",
-            position: "top-52 left-5",
+            position: "top-52 right-5",
             windowPosition: "top-[45vh] left-7",
             children: [
                 {
