@@ -101,11 +101,11 @@ const blogPosts = [
 const techStack = [
     {
         category: "Frontend",
-        items: ["React.js", "TypeScript", "Tailwind CSS"],
+        items: ["React.js", "JavaScript", "CSS"],
     },
     {
         category: "Backend",
-        items: ["Node.js", "Laravel", "PHP", "REST APIs"],
+        items: ["Laravel", "PHP", "REST APIs"],
     },
     {
         category: "AI & ML",
@@ -379,6 +379,48 @@ const WORK_LOCATION = {
                     fileType: "img",
                     position: "top-10 right-20",
                     imageUrl: "/images/project-4.png",
+                },
+            ],
+        },
+        // ▶ Project 5
+        {
+            id: 9,
+            name: "HelioSynth Website",
+            icon: "/images/folder.png",
+            kind: "folder",
+            position: "top-10 left-5",
+            windowPosition: "top-[8vh] left-7",
+            children: [
+                {
+                    id: 1,
+                    name: "HelioSynth.txt",
+                    icon: "/images/txt.png",
+                    kind: "file",
+                    fileType: "txt",
+                    position: "top-5 left-10",
+                    description: [
+                        "HelioSynth Research is an AI-focused research initiative exploring technology-driven solutions in healthcare.",
+                        "As Founder & CTO, I contribute to technical planning, product development, website development, and early-stage product execution.",
+                        "Built the official website using React.js, TypeScript, and Tailwind CSS, with reusable components and responsive layouts.",
+                    ],
+                },
+                {
+                    id: 2,
+                    name: "HelioSynth Website",
+                    icon: "/images/safari.png",
+                    kind: "file",
+                    fileType: "url",
+                    href: "https://heliosynthresearch.ai/",
+                    position: "top-20 right-10",
+                },
+                {
+                    id: 3,
+                    name: "HelioSynth.png",
+                    icon: "/images/image.png",
+                    kind: "file",
+                    fileType: "img",
+                    position: "top-52 left-40",
+                    imageUrl: "/images/project-1.png",
                 },
             ],
         },
